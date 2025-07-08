@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #f0a500, #f7b731); /* Bright, warm gradient */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  max-width: 480px;
+  background: #ffffff; /* White background for the chat container */
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #2c3e50; /* Darker color for the title */
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #f0a500; /* Focus effect color */
+}
+
+button {
+  background-color: #f0a500; /* Bright golden button */
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #f7b731; /* Slight hover effect with lighter shade */
+  transform: translateY(-2px);
+}
+
+#chat-box {
+  height: 350px;
+  overflow-y: auto;
+  background: #ecf0f1; /* Light grey for chat box background */
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.message {
+  margin-bottom: 12px;
+  background: #f39c12; /* Bright orange messages */
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message strong {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  input, select, button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  #chat-box {
+    height: 300px;
+  }
+}
